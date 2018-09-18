@@ -20,20 +20,20 @@
 # http://youtube.com/c/NareshGanatra
 
 
-from __future__ import print_function
+#from __future__ import print_function
 #from future.standard_library import install_aliases
 #install_aliases()
 
-from urllib.parse import urlparse, urlencode
-from urllib.request import urlopen, Request
-from urllib.error import HTTPError
+#from urllib.parse import urlparse, urlencode
+#from urllib.request import urlopen, Request
+#from urllib.error import HTTPError
 
-import json
-import os
+#import json
+#import os
 
 from flask import Flask
-from flask import request
-from flask import make_response
+#from flask import request
+#from flask import make_response
 
 # Flask app should start in global layout
 app = Flask(__name__)
