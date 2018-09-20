@@ -39,7 +39,7 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.rout('/')
-def index();
+def index():
     return 'hello'
 """@app.route('/webhook', methods=['POST'])
 def webhook():
