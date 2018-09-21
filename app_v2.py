@@ -38,7 +38,7 @@ from flask import Flask
 # Flask app should start in global layout
 app = Flask(__name__)
 
-@app.rout('/')
+@app.route('/')
 def index():
     return 'hello'
 """@app.route('/webhook', methods=['POST'])
