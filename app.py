@@ -65,11 +65,11 @@ def processRequest(req):
 def makeWebhookResult(data):
     print ("starting makeWebhookResult...")
     feeds = data.get('feeds')
-    if query is None:
+    if feeds is None:
         return {}
 
     field1 = feeds.get('field1')
-    if result is None:
+    if field1 is None:
         return {}
 
     
