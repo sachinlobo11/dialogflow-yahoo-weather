@@ -5,6 +5,9 @@ This is a really simple webhook implementation that gets dialogflow classificati
 More info about dialogflow webhooks could be found here:
 https://dialogflow.com/docs/fulfillment
 
+# Deploy to:
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
 # What does the service do?
 It's a weather information fulfillment service that uses [Yahoo! Weather API](https://developer.yahoo.com/weather/).
 The services takes the `geo-city` parameter from the action, performs geolocation for the city and requests weather information from Yahoo! Weather public API. 
