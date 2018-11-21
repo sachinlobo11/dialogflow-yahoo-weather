@@ -40,8 +40,8 @@ def processRequest(req):
         #return {}
     #baseurl = "https://query.yahooapis.com/v1/public/yql?"
     #yql_query = makeYqlQuery(req)
-    if yql_query is None:
-        return {}
+   # if yql_query is None:
+       # return {}
     yql_url = "https://api.thingspeak.com/channels/107478/feeds.json?results=1"
     result = urlopen(yql_url).read()
     #data = json.loads(result)
