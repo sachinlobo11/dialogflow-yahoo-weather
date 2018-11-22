@@ -67,10 +67,11 @@ def makeWebhookResult(data):
     feeds = data.get('feeds')
     if feeds is None:
         return {}
-
-    field1 = feeds.get('[')
-    if field1 is None:
-        return {}
+    for r in data
+        return r["field1"]
+   # field1 = feeds.get('[')
+   # if field1 is None:
+   #     return {}
 
     
 
