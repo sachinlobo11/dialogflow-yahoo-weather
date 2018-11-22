@@ -50,6 +50,9 @@ def processRequest(req):
     res = makeWebhookResult(data)
     zap_url="https://hooks.zapier.com/hooks/catch/3174192/fdhs6r?dataq="+res
     result1 = urlopen(zap_url).read()
+    zapactivate=json.loads(result1)
+    print ("zap activated zooooop!!")
+    print (zapactivate)
     return res
 
 
