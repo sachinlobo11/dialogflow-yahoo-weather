@@ -68,7 +68,7 @@ def makeWebhookResult(data):
     if feeds is None:
         return {}
 
-    field1 = feeds.get('field1')
+    field1 = feeds.get('field2')
     if field1 is None:
         return {}
 
