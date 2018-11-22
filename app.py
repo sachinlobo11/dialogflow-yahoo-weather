@@ -64,14 +64,14 @@ def processRequest(req):
 
 def makeWebhookResult(data):
     print ("starting makeWebhookResult...")
-    feeds = data.get('feeds')
+    feeds = data.get('feeds')[0]
     if feeds is None:
         return {}
-    for r in feeds:
-        return r["field1"]
-   # field1 = feeds.get('[')
-   # if field1 is None:
-   #     return {}
+    #for r in feeds:
+        #return r["field1"]
+    field1 = feeds.get('field1')
+    if field1 is None:
+        return {}
 
     
 
