@@ -92,7 +92,13 @@ def makeWebhookResult(data):
 
 @app.route('/test', methods=['GET'])
 def test():
-    return  "Hello there my friend !!"
+    app = ClarifaiApp(api_key='d1c9df3c907e48e1a317856eea26c099')
+    model = app.public_models.general_model
+    model.model_version = 'aa7f35c01e0642fda5cf400f543e7c40'
+    response = model.predict([ClImage(url="https://drive.google.com/uc?id=1r4gH7zDmQ24cuB-26PgLuyb7ncU_2WMY&export=download")])
+    print(response)
+
+    return  response
 
 
 @app.route('/static_reply', methods=['POST'])
