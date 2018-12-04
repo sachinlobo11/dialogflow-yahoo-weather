@@ -90,7 +90,7 @@ def makeWebhookResult(data):
     return field1
 
 
-@app.route('/test', methods=['POST'])
+@app.route('/test', methods=['GET'])
 def test():
     app = ClarifaiApp(api_key='d1c9df3c907e48e1a317856eea26c099')
     model = app.public_models.general_model
