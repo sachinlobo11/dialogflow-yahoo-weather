@@ -97,9 +97,8 @@ def test():
     model.model_version = 'aa7f35c01e0642fda5cf400f543e7c40'
     response = model.predict([ClImage(url="https://drive.google.com/uc?id=1r4gH7zDmQ24cuB-26PgLuyb7ncU_2WMY&export=download")])
     print(response)
-    response=json.loads(response)
-    return response
-
+    
+    return "Done"
 
 @app.route('/static_reply', methods=['POST'])
 def static_reply():
