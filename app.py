@@ -98,7 +98,7 @@ def test():
     response = model.predict([ClImage(url="https://drive.google.com/uc?id=1r4gH7zDmQ24cuB-26PgLuyb7ncU_2WMY&export=download")])
     print(response)
 
-    return  response
+    return  "ih"
 
 
 @app.route('/static_reply', methods=['POST'])
